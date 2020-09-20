@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+#gallery {
+  display: flex;
+  list-style: none;
+  height: 100px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.gallery-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery-img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
