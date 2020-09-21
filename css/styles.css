@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+#ingredients {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 #gallery {
   display: flex;
   list-style: none;
@@ -9,7 +14,7 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .gallery-item {
   padding-left: 15px;
@@ -22,9 +27,8 @@
 }
 
 #counter {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
 #validation-input {
   border: 3px solid #bdbdbd;
 }
@@ -35,4 +39,9 @@
 
 #validation-input.invalid {
   border-color: #f44336;
+}
+
+#font-size-control {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }

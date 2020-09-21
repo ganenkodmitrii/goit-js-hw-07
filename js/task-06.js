@@ -9,4 +9,18 @@
 Для добавления стилей, используй CSS-классы valid и invalid.
 */
 const validationInput = document.querySelector('#validation-input');
-console.log(validationInput);
+
+const onInputValidation = event => {
+  const dataLength = Number(validationInput.getAttribute('data-length'));
+  const inputValLength = event.currentTarget.value.length;
+
+  if (dataLength === inputValLength) {
+    validationInput.classList.add('valid');
+    validationInput.classList.remove('invalid');
+    return;
+  }
+
+  validationInput.classList.remove('valid');
+  validationInput.classList.add('invalid');
+};
+validationInput.addEventListener('blur', onInputValidation);
